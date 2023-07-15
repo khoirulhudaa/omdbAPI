@@ -92,7 +92,7 @@ return (
                         </div>
                     </div>
                 ): 
-                listVideoMain.length && (
+                listVideoMain !== '' || listVideo !== null && (
                     listVideoMain?.map((data, index) => (
                         <div key={index} onClick={() => handleDetail(data.Title)} className='lg:w-[23%] w-[90%] mr-4 mb-[40px] lg:mb-5 hover:brightness-[96%] active:scale-[0.99] cursor-pointer overflow-hidden min-h-[330px] max-h-[400px] rounded-lg border border-slate-400 shadow-lg block'>
                             <div className='w-[100%] h-[65%] overflow-hidden rounded-lg bg-sz-cover bg-center'>
