@@ -36,7 +36,12 @@ const MainFrame = () => {
         <div className='w-max h-max flex items-center'>
             <div className='w-max h-max flex items-center'>
                 <h3 className='font-bold  w-max h-max px-[16px] bg-yellow-500 text-white py-[6px] rounded-full text-[16px]'>{title !== null ? (listVideoMain && listVideoMain.length ? listVideoMain[0]?.Type : null) : null}</h3>
-                <p className='text-[14px] ml-4'>{title !== null ? (listVideoMain && listVideoMain.length ? listVideoMain[0]?.Year : null) : null}</p>
+                <p className='text-[14px] ml-4'>
+                  {
+                  title !== null ? 
+                    (listVideoMain && listVideoMain.length ? listVideoMain[0]?.Year : null) : null
+                  }
+                  </p>
             </div>
         </div>
         <div className='w-[100%] font-normal text-[14px] h-max rounded-lg p-5 mt-[30px] bg-slate-100 text-black'>
